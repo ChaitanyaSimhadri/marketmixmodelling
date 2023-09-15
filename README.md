@@ -2,7 +2,7 @@
 Capstone project submitted for IIIT Bangalore and Upgrad for Evaluation
 
 
-Problem Statement
+### Problem Statement
 ElecKart is a leading e-commerce chain based in Ontario, Canada, specialising in electronic products. The brand has shown commendable growth in just a few years of its operation. However, over the last one year, ElecKart has faced a revenue dip even after spending a significant amount of money on marketing and promotions. There was a high customer churn ratio because the company was failing to understand customer demographics and cater to the needs of their customers.
 
 Essentially, the company wants —
@@ -12,7 +12,7 @@ What is the quantitative impact of each commercial lever on revenue?
 How eleckart allocate budgets on different marketing campaigns
 
 
-Summary
+### Summary
 Dataset 'ConsumerElectronics' have 1648824 rows and 20 cols
 
 Understanding Data : The target variable, in this case is decided as 'gmv' Which is Gross merchandise value
@@ -42,43 +42,44 @@ Feature Engineering: Derived New KPIs whic are needed for MMM
      * payday
 After feature selection, Aggregated the Complete Dataset to weekly level and Seggregated the Data to three Categories
 
-Camera accessoried
-Home audio
-Gaming Accessory
+* Camera accessoried
+* Home audio
+* Gaming Accessory
+  
 Used Linear Regression Additive Model and Multiplicative Model on all three Datasets
 
 Below are few observations based on the Modellng
- Additive Model Scores:
- Camera Accessary  -  R2 Score on Test Data - 0.8014843753292288, on Train data - 0.9751149715897107
- Home Audio -  R2 Score on Test Data - 0.14963637297420018, on Train data - 0.14963637297420018
- Gaming Accessary-  R2 Score on Test Data - -1.5303001348794707, on Train data - 0.9773583045274947
- Multiplicative Model: 
- Camera Accessary  -  R2 Score on Test Data -- 0.9868555048474846, on Train data - 0.990254012909584
- Home Audio -  R2 Score on Test Data -- 0.990254012909584, on Train data - 0.990254012909584
- Gaming Accessary -  R2 Score on Test Data -- 0.9887077514241147, on Train data - 0.9966545388956052
-Overall Multiplicative Model has the best fit on the dataset
+ ### Additive Model Scores:
+ * Camera Accessary  -  R2 Score on Test Data - 0.8014843753292288, on Train data - 0.9751149715897107
+ * Home Audio -  R2 Score on Test Data - 0.14963637297420018, on Train data - 0.14963637297420018
+ * Gaming Accessary-  R2 Score on Test Data - -1.5303001348794707, on Train data - 0.9773583045274947
+ ### Multiplicative Model: 
+ * Camera Accessary  -  R2 Score on Test Data -- 0.9868555048474846, on Train data - 0.990254012909584
+ * Home Audio -  R2 Score on Test Data -- 0.990254012909584, on Train data - 0.990254012909584
+ * Gaming Accessary -  R2 Score on Test Data -- 0.9887077514241147, on Train data - 0.9966545388956052
+*** Overall Multiplicative Model has the best fit on the dataset
 
 Best Fit line of All three Multiplicative Models are as below
 
-revenue(Camera Accessary) =  Const + 0.46 * Other_SMA3 + 0,27 * cameratripod + 0.75 * lens + 0.05 * Tv_Adstock – 0.06 * Content_Marketing_adstock
-Revenue(Home Audio) = Const + 0.38 * homeaudiospeaker + homeaudiospeaker * homeaudiospeaker - 0.23*Online_marketing_adstock + 0.16 * Online_marketing_adstock - 0.04 * Other_SMA3
+* Revenue(Camera Accessary) =  Const + 0.46 * Other_SMA3 + 0,27 * cameratripod + 0.75 * lens + 0.05 * Tv_Adstock – 0.06 * Content_Marketing_adstock
+* Revenue(Home Audio) = Const + 0.38 * homeaudiospeaker + homeaudiospeaker * homeaudiospeaker - 0.23*Online_marketing_adstock + 0.16 * Online_marketing_adstock - 0.04 * Other_SMA3
 
-Revenue(Gaming Accessory): Const + 0.51 * gamepad + 0.43* gamingaccessorykit + 0.42 * gamingkeyboard + gamingkeyboard + gamingkeyboard + ContentMarketing_SMA3 * ContentMarketing_SMA3 + 0.22* listing_price_SMA3
+* Revenue(Gaming Accessory): Const + 0.51 * gamepad + 0.43* gamingaccessorykit + 0.42 * gamingkeyboard + gamingkeyboard + gamingkeyboard + ContentMarketing_SMA3 * ContentMarketing_SMA3 + 0.22* listing_price_SMA3
 
-Recommendations: Camera Accessary:
+#### Recommendations: Camera Accessary:
 
-Concentrate More on products like camerabattery, lens and Cameratripod
+* Concentrate More on products like camerabattery, lens and Cameratripod
 These Items yeild more revenue
-TV is the best advertising Media of all. Invest in the TV advertising and Content marketing can be skipped
+* TV is the best advertising Media of all. Invest in the TV advertising and Content marketing can be skipped
 
 
-Home Audio: Concentrate on
+### Home Audio:
 
-Concentrate more on products game pad, gaming accessory kit, keyboard and mouse
-Content marketing is the best marketing statergy fpr Home Audio products
+* Concentrate more on products game pad, gaming accessory kit, keyboard and mouse
+* Content marketing is the best marketing statergy fpr Home Audio products
 
 
-Gaming Accessary:
+### Gaming Accessary:
 
-Concentrate more on products game pad, gaming accessory kit, keyboard and mouse
-Content marketing is the best marketing statergy fpr Home Audio products
+* Concentrate more on products game pad, gaming accessory kit, keyboard and mouse
+* Content marketing is the best marketing statergy fpr Home Audio products
