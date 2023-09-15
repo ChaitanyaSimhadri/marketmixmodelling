@@ -70,10 +70,14 @@ Recommendations: Camera Accessary:
 Concentrate More on products like camerabattery, lens and Cameratripod
 These Items yeild more revenue
 TV is the best advertising Media of all. Invest in the TV advertising and Content marketing can be skipped
+
+
 Home Audio: Concentrate on
 
 Concentrate more on products game pad, gaming accessory kit, keyboard and mouse
 Content marketing is the best marketing statergy fpr Home Audio products
+
+
 Gaming Accessary:
 
 Concentrate more on products game pad, gaming accessory kit, keyboard and mouse
